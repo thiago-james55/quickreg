@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/regulagem.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickReg</title>
+
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a id="title" href="/index.html">QuickReg</a>
+        <a href="/search.html">Regulagem</a>
+        <a href="/search.html">Motores</a>
+        <a id="aMyShorts" href="/myshorts.html">Informações Uteis</a>
+        <a href="/about.html">Sobre</a>
+
+    </div>
+
+    <div id="info">
+
+        <div id="selectMotor">
+
+            <div>
+                <span>Quantidade de Válvulas:</span>
+                <select name="valvulas" id="valvulas">
+                    <option value="8">8</option>
+                    <option value="12">12</option>
+                    <option value="16">16</option>
+                    <option value="24">24</option>
+                </select>
+            </div>
+
+            <div>
+                <span>Modelo Motor:</span>
+                <select name="cars" id="cars">
+                    <option value="Ap">Ap</option>
+                    <option value="Fiasa">Fiat Fiasa/MPI</option>
+                    <option value="Fire">Fire 8v</option>
+                    <option value="Manual">Medida Manual</option>
+                </select>
+            </div>
+
+        </div>
+
+
+        <hr>
+
+        <div id="manual">
+
+            <div>
+                <span style="color: green;"><b>Escape:</b></span>
+                <span>( Min:</span> <input type="number" name="escape" id="minManualEscape">
+                <span>Max:</span> <input type="number" name="escape" id="maxManualEscape">
+                <span>)</span>
+            </div>
+
+            <div>
+                <span style="color: green;"><b>Admissão:</b></span>
+                <span>(Min:</span> <input type="number" name="admissao" id="minManualAdmissao">
+                <span>Max:</span> <input type="number" name="admissao" id="maxManualAdmissao">
+                <span>)</span>
+
+            </div>
+
+
+        </div>
+
+        <hr>
+
+    </div>
+
+    <div id="engine" class="engine">
+
+        <div class="item1">
+            <p id="escapeInfo">ESCAPE</p>
+        </div>
+
+        <div class="item2">
+            <p id="polia">POLIA</p>
+        </div>
+
+        <div class="item3">
+
+            <div id="grid8" class="gridRegulated"> </div>
+            <div hidden id="grid12" class="gridRegulated"></div>
+            <div hidden id="grid16" class="gridRegulated"></div>
+            <div hidden id="grid24" class="gridRegulated"></div>
+
+
+
+
+        </div>
+
+        <div class="item4">
+            <p id="admissaoInfo">ADMISSÃO</p>
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

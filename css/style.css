@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.topnav {
+    background-color: black;
+    overflow: hidden;
+}
+  
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font: 17px lato , arial;
+}
+
+.login a {
+    float: right;
+    text-align: right;
+}
+
+
+#title {
+    background-color: green;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+#info {
+   text-align: center;
+   margin-top: 1%;
+   font-size: large;
+}
+
+#selectMotor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#manual {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+#manual input {
+    width:20%;
+}
+
+.item1 { grid-area: escape; }
+.item2 { grid-area: polia; align-self: center;}
+.item3 { grid-area: regulagem; }
+.item4 { grid-area: admissao; }
+
+
+#engine {
+    display: grid;
+    grid-template-areas: "escape escape escape escape escape" 
+                         "polia regulagem regulagem regulagem regulagem" 
+                         "admissao admissao admissao admissao admissao" ;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+ 
+}
+
+.gridRegulated p {
+    margin: 0;
+}
+
+#polia{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: xx-large;
+    margin-left: 0;
+}
+
+#escapeInfo {
+    font-size: xx-large;
+}
+
+#admissaoInfo {
+    font-size: xx-large;
+}
+
+#grid8 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    background-color: green;
+    padding: 10px;
+  }
+  
+  #grid8 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    width: auto;
+    font-size: 20px;
+  }
+
+  .inputRegulated {
+    background-color:rgba(0, 128, 0,0.8);
+    color: white;
+    text-align: center;
+  }
+  .engine input {
+    width: 80%;
+  }
+
